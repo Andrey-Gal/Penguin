@@ -270,3 +270,25 @@
     margin-top: -58px;
     height: calc(100vh - 300px);
   }
+
+  .penguin:hover {
+  transform: scale(1.1) translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+.penguin-head::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 8%;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  top: 20%;
+  left: 10%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.penguin:hover .penguin-head::after {
+  opacity: 1;
+}
